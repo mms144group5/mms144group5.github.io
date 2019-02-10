@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding&Modifying Records</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <a href="#section1">Home</a>
+        <a href="#section2">Introduction</a>
+        <a href="#section3">Adding Records</a>
+        <a href="#section4">Modifying Records</a>
+        <a href="#section5">References and Contributors</a>
+      </nav>
+    </div>
+    <div class="container">
+      <div id="section1" class="section">
+        <div class="text-wr">
+          <h1 class="title">
+            <div class="title-top">MMS144 Group 5</div>
+            <div class="title-tx">Adding and Modifying Records</div>
+          </h1>
+        </div>
+      </div>
+      <div id="section2" class="section">
+        <div class="text-wr">
+          <h1 class="title">Introduction</h1>
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <!-- <div class="swiper-slide"><h2>Basic DBMS Functions</h2></div> -->
+              <div class="swiper-slide">
+                <h2>Review of Common DBMS Terminologies and Concepts</h2>
+                <p>
+                  A Database Management System (DBMS) are computer programs, applications or software that manages a database. It handles the storage, retrieval and updating of data. Operators use the system to run different types of operations with the data.
+                </p>
+                <br />
+                <p>
+                  Most DBMS functions involving adding, updating and editing of data. DBMS systems was usually held by large companies, organizations and even the government as they had the resources available to manage large pieces of data. This was in the form of record keeping, accounting, census and survey tracking, human resources, customer support and similar types of systems. 
+                </p>
+                <br />
+                <p>
+                  However, with constant innovating technology, DBMS is now available to anyone with a computer and internet access. Requesting and managing data has never been easier. An example of this would be the task of collecting survey data. Before computer systems a person had to go door to door, speak with individual people hand write data on paper to collect information. Imagine how long would have taken to find out what favorite type of food 1000 people would like. Now imagine today, a person could just create a survey on Survey Monkey or Facebook and post the questions on their news feed. They could get survey answers in a few hours or days, which would have taken weeks or months to obtain the data.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h2>Database Management Systems DBMS</h2>
+                <p>Here are some of the basic functions of a DBMS:</p>
+                <ul>
+                  <li>Adding Records: Accepting stored data from a user</li>
+                  <li>
+                    Modifying Records: Modifying or updating existing data
+                  </li>
+                  <li>Deleting Records: User deleting stored data</li>
+                  <li>
+                    Search Function: This function is mostly used for reviewing,
+                    modifying or deleting records
+                  </li>
+                  <li>
+                    Indexing & Cataloging: This facilitates faster functions
+                    when data is sorted into groups.
+                  </li>
+                </ul>
+                <p>
+                  Below is a basic and common visual representation of a DBMS.
+                </p>
+                <br />
+                <img
+                  class="db-diagram"
+                  src="https://i.imgur.com/M7JMGW1.png"
+                  alt="database diagram"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h2>Review of Common DBMS Terminologies and Concepts*</h2>
+                <ul>
+                  <li>
+                    Data - known facts that could be recorded and stored on
+                    computer media (Figueroa)
+                  </li>
+                  <li>Database - a structured collection of data</li>
+                  <li>
+                    Database Management System (DBMS) - a collection of
+                    interrelated data plus the software and hardware required to
+                    access that data (Alviar, et al. 1998)
+                  </li>
+                  <li>Relational DBMS - is a collection of organized set of tables from which data can be accessed easily.  It is the basis for SQL and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.</li>
+                  <li>
+                    Structured Query Language (SQL) - is a standard language for
+                    storing, manipulating and retrieving data in databases.
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <h2>Review of Common DBMS Terminologies and Concepts</h2>
+                <ul>
+                  <li>
+                        Entity - a piece of data to be stored, pertaining to one real-world object, person, place etc.
+                  </li>
+                  <li>Attribute - smaller piece of information about entities
+                    </li>
+                  <li>
+                        Table - a collection of related data entries. It consists of columns and rows.
+                  </li>
+                  <li>Record - consists of information that is related one way or another
+                    </li>
+                  <li>
+                        Field - pieces of information that comprise a record 
+                  </li>
+                </div>
+              <div class="swiper-slide">
+                  <h2>Database Tables</h2>
+                  <p>A database most often contains one or more tables. Each table is identified by a name. Tables contain records (rows) with data.</p>
+            </div>
+              <div class="swiper-slide"><h2>Sample Database Table
+                </h2>
+                <p>Below is a table of Student Profile. It contains five records (one for each student) and five columns (StudentNumber, StudentName , ContactName, Gender, GWA, City).
+                </p>
+                <br>
+                <p>One record is highlighted in skyblue.</p><br/>
+                <p>The table headers can be identified as "fields." (green)</p><br/>
+                <table>
+                    <tr class="field-highlight">
+                        <th>Student Number</th>
+                        <th>Student Name</th>
+                        <th>Gender</th>
+                        <th>GWA</th>
+                        <th>City</th>
+                    </tr>
+                    <tr>
+                        <td>201427239</td>
+                        <td>Liwayway Silang</td>
+                        <td>Female</td>
+                        <td>2.88</td>
+                        <td>Pasig</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>201578932</td>
+                        <td>Bayani Aguinaldo</td>
+                        <td>Male</td>
+                        <td>2.85</td>
+                        <td>Makati</td>
+                    </tr>
+                    <tr>
+                        <td>201690170</td>
+                        <td>Marikit Mabini</td>
+                        <td>Female</td>
+                        <td>1.93</td>
+                        <td>Pasig</td>
+                    </tr>
+                    <tr>
+                        <td>201708679</td>
+                        <td>Amihan Luna</td>
+                        <td>Female</td>
+                        <td>2.24</td>
+                        <td>Makati</td>
+                    </tr>
+                    <tr>
+                        <td>201834217</td>
+                        <td>Dakila Bonifacio</td>
+                        <td>Male</td>
+                        <td>1.18</td>
+                        <td>Pasay</td>
+                    </tr>
+                    
+                </table>
+              </div>
+              <div class="swiper-slide">
+                <h2>SQL Statements</h2>
+                <ul>
+                    <li>SQL statements are used to perform actions on a database</li>
+                    <li>SQL keywords are not case sensitive</li>
+                    <li>Some database systems require a semicolon at the end of each SQL statement</li>
+                </ul>
+                  
+              </div>
+              <div class="swiper-slide">
+                    <h2>Important SQL COMMANDS</h2>
+                    <ul>
+                        <li>SELECT - extracts data from a database</li>
+                        <li>UPDATE - updates data in a database</li>
+                        <li>DELETE - deletes data from a database</li>
+                        <li>INSERT INTO - inserts new data into a database</li>
+                        <li>CREATE DATABASE - creates a new database</li>
+                        <li>ALTER DATABASE - modifies a database</li>
+                        <li>CREATE TABLE - creates a new table</li>
+                        <li>ALTER TABLE - modifies a table</li>
+                        <li>DROP TABLE - deletes a table</li>
+                        <li>CREATE INDEX - creates an index (search key)</li>
+                        <li>DROP INDEX - deletes an index</li>
+                    </ul>    
+                </div>
+                <div class="swiper-slide">
+                    <h2>Demo Database: Airline Database</h2>
+                    <p>Below is a database of an airline based in the United States. It consists of four tables, namely: Customers, Aircraft, Employees and Destinations.</p><br/>
+                    <table>
+                        <tr>
+                            <th>Table Name</th>
+                            <th>Records</th>
+                        </tr>
+                        <tr>
+                            <td>Customers</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Aircraft</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>Employees</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Destinations</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Customers</h2>
+                    <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th>Customer Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td>01200</td>
+                          <td>Olivia Wilde</td>
+                          <td>34</td>
+                          <td>owilde@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td>01203</td>
+                          <td>Matt Damon</td>
+                          <td>48</td>
+                          <td>mdamon@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01204</td>
+                          <td>Liv Tyler</td>
+                          <td>41</td>
+                          <td>ltyler@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01205</td>
+                          <td>Jodie Foster</td>
+                          <td>56</td>
+                          <td>jfoster@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01206</td>
+                          <td>Emma Stone</td>
+                          <td>30</td>
+                          <td>estone@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01207</td>
+                          <td>Charlize Theron</td>
+                          <td>43</td>
+                          <td>ctheron@gmail.com</td>
+                          <td>Boston</td>
+                      </tr>
+                       <tr>
+                          <td>01208</td>
+                          <td>Jennifer Lawrence</td>
+                          <td>28</td>
+                          <td>jlawrence@gmail.com</td>
+                          <td>Texas</td>
+                      </tr>
+                  </table>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Aircraft</h2>
+                    <table>
+                        <tr>
+                            <th>Aircraft ID</th>
+                            <th>Name</th>
+                            <th>Capacity</th>
+                            <th>Age</th>
+                            <th>Quantity</th>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Airbus A330</td>
+                            <td>335</td>
+                            <td>12</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Airbus A380</td>
+                            <td>555</td>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Boeing 737</td>
+                            <td>137</td>
+                            <td>18</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>Boeing 767</td>
+                            <td>181</td>
+                            <td>12</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>Boeing 777</td>
+                            <td>321</td>
+                            <td>11</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>106</td>
+                            <td>Boeing 787</td>
+                            <td>335</td>
+                            <td>4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>107</td>
+                            <td>Irkut MC21</td>
+                            <td>163</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="swiper-slide">
+                    <h2>Employees</h2>
+                    <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Designation</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>101</td>
+                                <td>Sky Langdon</td>
+                                <td>43</td>
+                                <td>Pilot</td>
+                                <td>Permanent</td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>Mary Stewart</td>
+                                <td>27</td>
+                                <td>Ground Staff</td>
+                                <td>Contractual</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>Anne Galbot</td>
+                                <td>31</td>
+                                <td>Flight Attendant</td>
+                                <td>Permanent</td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>Sydney Hunt</td>
+                                <td>36</td>
+                                <td>Flight Attendant</td>
+                                <td>Permanent</td>
+                            </tr>
+                            <tr>
+                                <td>105</td>
+                                <td>Gary Robert</td>
+                                <td>38</td>
+                                <td>Co-Pilot</td>
+                                <td>Permanent</td>
+                            </tr>
+                            <tr>
+                                <td>106</td>
+                                <td>Philipp Crow</td>
+                                <td>25</td>
+                                <td>Flight Attendant</td>
+                                <td>Contractual</td>
+                            </tr>
+                        </table>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <h2>Destinations</h2>
+                    <table>
+                        <tr>
+                            <th>City</th>
+                            <th>Airport</th>
+                            <th>Code</th>
+                            <th>Frequency</th>
+                        </tr>
+                        <tr>
+                            <td>Lima</td>
+                            <td>Jorge Chavez Airport</td>
+                            <td>LIM</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>London</td>
+                            <td>London Heathrow</td>
+                            <td>LHR</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Bogota</td>
+                            <td>El Dorado Airport</td>
+                            <td>BOG</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Cancun</td>
+                            <td>Cancun Airport</td>
+                            <td>CUN</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Reykjavik</td>
+                            <td>Keflavik Airport</td>
+                            <td>KEF</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Panama City</td>
+                            <td>Tocumen Airport</td>
+                            <td>PTY</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div id="section3" class="section">
+        <div class="text-wr">
+          <h1 class="title">Adding Records</h1>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <h2>Selecting Records</h2>
+                  <p>The SELECT statement is used to select data from a database.</p><br/>
+                  <p>The data returned is stored in a result table, called the result-set.</p><br/>
+                  <p>When selecting data, the syntax would be:</p><br/><br/>
+                  <div class="code-sample">
+                      <p>SELECT column1, column2, …</p>
+                      <p>FROM table_name;</p>
+                  </div><br/><br/>
+                  <p>Here, column1, column2, ... are the field names of the table you want to select data from.</p><br/>
+                  <p>If you want to select all the fields available in the table, use the following syntax:</p><br/><br/>
+                  <div class="code-sample"><p>SELECT * FROM table_name;</p></div><br/>
+            </div>
+              <div class="swiper-slide">
+                  <h2>EXAMPLE: SELECTING RECORDS</h2>
+                  <p>Below is a selection from the Destinations table in the Airlines sample database:</p>
+                  <h2>Destinations</h2>
+                    <table>
+                        <tr>
+                            <th>City</th>
+                            <th class="highlight-cell">Airport</th>
+                            <th>Code</th>
+                            <th class="highlight-cell">Frequency</th>
+                        </tr>
+                        <tr>
+                            <td>Lima</td>
+                            <td class="highlight-cell">Jorge Chavez Airport</td>
+                            <td>LIM</td>
+                            <td class="highlight-cell">2</td>
+                        </tr>
+                        <tr>
+                            <td>London</td>
+                            <td class="highlight-cell">London Heathrow</td>
+                            <td>LHR</td>
+                            <td class="highlight-cell">3</td>
+                        </tr>
+                        <tr>
+                            <td>Bogota</td>
+                            <td class="highlight-cell">El Dorado Airport</td>
+                            <td>BOG</td>
+                            <td class="highlight-cell"> 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cancun</td>
+                            <td class="highlight-cell">Cancun Airport</td>
+                            <td>CUN</td>
+                            <td class="highlight-cell"> 6</td>
+                        </tr>
+                        <tr>
+                            <td>Reykjavik</td>
+                            <td class="highlight-cell">Keflavik Airport</td>
+                            <td>KEF</td>
+                            <td class="highlight-cell"> 3</td>
+                        </tr>
+                        <tr>
+                            <td>Panama City</td>
+                            <td class="highlight-cell">Tocumen Airport</td>
+                            <td>PTY</td>
+                            <td class="highlight-cell">3</td>
+                        </tr>
+                    </table><br/>
+                  <p>The following SQL statement selects the "Airport" and "Frequency" columns from the "Destinations” table:</p><br/>
+                  <div class="code-sample">
+                      <p>SELECT 	Airport, Frequency </p>
+                      <p>FROM 	Destinations;</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <h2>EXAMPLE: SELECTING RECORDS</h2>
+                  <p>The SQL statement </p> <br/>
+                  <div class="code-sample">
+                      <p>SELECT Airport, Frequency</p> 
+                      <p>FROM 	Destinations;</p>
+                  </div><br/>
+                  <p>provides this result: </p><br/>
+                  <p>Number of Records: 4</p><br/>
+                  <table>
+                      <tr>
+                          <th>Airport</th>
+                          <th>Frequency</th>
+                      </tr>
+                      <tr>
+                          <td>Jorge Chavez Airport</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>London Heathrow</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>El Dorado Airport</td>
+                          <td>2</td>
+                      </tr>
+                      <tr>
+                          <td>Cancun Airport</td>
+                          <td>6</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="swiper-slide">
+                  <h2>ADDING NEW RECORDS</h2>
+                  <p>The INSERT TO statement is used to insert/add new records in a table.</p>
+                  <p>When adding values to specific columns of the table, both the column names and values should be specified. We use the SQL statement below:</p><br/>
+                  <div class="code-sample">
+                      <p>INSERT INTO table_name (column1, column2, column3, ...)</p>
+                      <p>VALUES (value1, value2, value3, ...);</p>
+                  </div><br/>
+                  <p>When adding values to all columns of the table, there is no need to specify the column names in the SQL query. However, the order of values should be the same as the columns in the table. We write a simplified SQL statement:</p><br/>
+                  <div class="code-sample">
+                      <p>INSERT INTO table_name</p>
+                      <p>VALUES (value1, value2, value3, ...);</p>
+                  </div>
+                </div>
+              <div class="swiper-slide">
+                  <h2>Example: Adding New Records</h2>
+                  <p>Information on the airline’s newly hired employees should be added to the database. We do this by specifying which table are we’re including this new record and then adding data on specific or all columns of the table.</p><br/>
+                  <p>Refer to the “Employees” table from the Airline Database. Margaret Rye was recently hired by the airline and we want to add her record in the Employees table of the airline’s database. The following SQL statement inserts a new record in the Employees table:</p><br/>
+                  <div class="code-sample">
+                      <p>INSERT INTO Employees (ID, Name, Age, Designation, Status)</p>
+                      <p>VALUES (107, ‘Margaret Rye’, 29, ‘Ground Staff’, ‘Contractual’);</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <h2>Example: Adding New Records</h2>
+                <p>Shown below is the original Employees table without the information on Margaret Rye.</p><br/>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Designation</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Sky Langdon</td>
+                        <td>43</td>
+                        <td>Pilot</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Mary Stewart</td>
+                        <td>27</td>
+                        <td>Ground Staff</td>
+                        <td>Contractual</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Anne Galbot</td>
+                        <td>31</td>
+                        <td>Flight Attendant</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Sydney Hunt</td>
+                        <td>36</td>
+                        <td>Flight Attendant</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Gary Robert</td>
+                        <td>38</td>
+                        <td>Co-Pilot</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>Philipp Crow</td>
+                        <td>25</td>
+                        <td>Flight Attendant</td>
+                        <td>Contractual</td>
+                    </tr>
+                </table>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Adding New Record</h2>
+                  <p>This is how it will look like now.</p><br/>
+                   <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Designation</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>101</td>
+                        <td>Sky Langdon</td>
+                        <td>43</td>
+                        <td>Pilot</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Mary Stewart</td>
+                        <td>27</td>
+                        <td>Ground Staff</td>
+                        <td>Contractual</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Anne Galbot</td>
+                        <td>31</td>
+                        <td>Flight Attendant</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Sydney Hunt</td>
+                        <td>36</td>
+                        <td>Flight Attendant</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Gary Robert</td>
+                        <td>38</td>
+                        <td>Co-Pilot</td>
+                        <td>Permanent</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>Philipp Crow</td>
+                        <td>25</td>
+                        <td>Flight Attendant</td>
+                        <td>Contractual</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-cell">107</td>
+                        <td class="highlight-cell">Margaret Rye</td>
+                        <td class="highlight-cell" >29</td>
+                        <td class="highlight-cell">Ground Staff</td>
+                        <td class="highlight-cell">Contractual</td>
+                    </tr>
+                    
+                </table>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Adding New Records</h2>
+                  <p>A new customer, Ben Affleck, recently signed up an account with the airline. We want to add him to the Customers table in the Airline database. Mr. Affleck did not disclose his age and city of residence so we leave those columns blank. We write the following SQL statement to insert a new record in the Customers table:</p><br/>
+                  <div class="code-sample">
+                      <p>INSERT INTO Customers (AccountNo, Name, Email)</p>
+                      <p>VALUES (01209, ‘Ben Affleck’, ‘baffleck@gmail.com’);</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Adding New Records</h2>
+                  <p>Shown below is the updated Customers table with information on Ben Affleck.</p>
+                                      <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th> Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td>01200</td>
+                          <td>Olivia Wilde</td>
+                          <td>34</td>
+                          <td>owilde@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td>01203</td>
+                          <td>Matt Damon</td>
+                          <td>48</td>
+                          <td>mdamon@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01204</td>
+                          <td>Liv Tyler</td>
+                          <td>41</td>
+                          <td>ltyler@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01205</td>
+                          <td>Jodie Foster</td>
+                          <td>56</td>
+                          <td>jfoster@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01206</td>
+                          <td>Emma Stone</td>
+                          <td>30</td>
+                          <td>estone@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01207</td>
+                          <td>Charlize Theron</td>
+                          <td>43</td>
+                          <td>ctheron@gmail.com</td>
+                          <td>Boston</td>
+                      </tr>
+                       <tr>
+                          <td>01208</td>
+                          <td>Jennifer Lawrence</td>
+                          <td>28</td>
+                          <td>jlawrence@gmail.com</td>
+                          <td>Texas</td>
+                      </tr>
+                      <tr>
+                          <td>01209</td>
+                          <td>Ben Affleck</td>
+                          <td>null</td>
+                          <td>baffleck@gmail.com</td>
+                          <td>null</td>
+                      </tr>
+                  </table>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div id="section4" class="section">
+        <div class="text-wr">
+          <h1 class="title">Modifying Records</h1>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <h2>Modifying or Updating Records</h2>
+                  <p>The UPDATE statement is used to modify the existing records in a table. The syntax would be:</p><br/>
+                  <div class="code-sample">
+                      <p>UPDATE table_name</p>
+                      <p>SET column1 = value1, column2 = value2, …</p>
+                      <p>WHERE condition;</p>
+                  </div><br/>
+                  <p class="note">Important Note!</p><br/>
+                  <p>Be careful when updating records in a table! The WHERE clause specifies which record(s) should be updated. If you omit the WHERE clause, all records in the table will be updated!</p>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Modifying/Updating Records</h2>
+                  <p>In this Customer table, say we want to update Olivia Wilde’s email and city because she recently relocated in Manila to study in UP Diliman. </p><br/>
+                  <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th> Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td>01200</td>
+                          <td>Olivia Wilde</td>
+                          <td>34</td>
+                          <td class="highlight-cell">owilde@gmail.com</td>
+                          <td class="highlight-cell">Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td>01203</td>
+                          <td>Matt Damon</td>
+                          <td>48</td>
+                          <td>mdamon@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01204</td>
+                          <td>Liv Tyler</td>
+                          <td>41</td>
+                          <td>ltyler@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Modifying/Updating Records</h2>
+                  <p>This is the SQL statement that allows you to do that: </p><br/>
+                  <div class="code-sample">
+                      <p>UPDATE Customers</p>
+                      <p>SET Email=‘owilde@up.edu.ph’, City= ‘Manila’</p>
+                      <p>WHERE Name='Olivia Wilde';</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                    <h2>Example: Modifying/Updating Records</h2>
+                    <p>The selection from the Customers Table will now look like this:</p><br/>
+                    <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th> Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td class="highlight-cell"> 01200</td>
+                          <td class="highlight-cell">Olivia Wilde</td>
+                          <td class="highlight-cell">34</td>
+                          <td class="highlight-cell">owilde@up.edu.ph</td>
+                          <td class="highlight-cell">Manila</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td>01203</td>
+                          <td>Matt Damon</td>
+                          <td>48</td>
+                          <td>mdamon@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01204</td>
+                          <td>Liv Tyler</td>
+                          <td>41</td>
+                          <td>ltyler@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                  </table>
+
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Modifying/Updating Records</h2>
+                  <p>But what if we want to update multiple records at once? Say we want to change the email address of all the customers living in Los Angeles.</p><br/>
+                  <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th> Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td>01200</td>
+                          <td>Olivia Wilde</td>
+                          <td>34</td>
+                          <td>owilde@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td>01203</td>
+                          <td>Matt Damon</td>
+                          <td>48</td>
+                          <td>mdamon@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td>01204</td>
+                          <td>Liv Tyler</td>
+                          <td>41</td>
+                          <td>ltyler@gmail.com</td>
+                          <td>Los Angeles</td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Modifying/Updating Records</h2>
+                  <p>This is when the WHERE clause controls the number of records that will be updated.</p><br/>
+                  <p>The following SQL statement will update the email to "mail@losangeles.com" for all records where city is "Los Angeles":</p><br/>
+                  <div class="code-sample">
+                      <p>UPDATE Customers</p><br/>
+                      <p>SET Email=‘losangelesmail@gmail.com’</p><br/>
+                      <p>WHERE City=‘Los Angeles’;</p>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Example: Modifying/Updating Records</h2>
+                  <p>The selection from the Customers Table will now look like this: </p><br/>
+                  <table>
+                      <tr>
+                          <th>Account No.</th>
+                          <th> Name</th>
+                          <th>Age</th>
+                          <th>Email</th>
+                          <th>City</th>
+                      </tr>
+                      <tr>
+                          <td>01200</td>
+                          <td>Olivia Wilde</td>
+                          <td>34</td>
+                          <td>owilde@gmail.com</td>
+                          <td>Seattle</td>
+                      </tr>
+                      <tr>
+                          <td>01201</td>
+                          <td>Tom Hanks</td>
+                          <td>62</td>
+                          <td>thanks@gmail.com</td>
+                          <td>New York</td>
+                      </tr>
+                      <tr>
+                          <td>01202</td>
+                          <td>Clive Owen</td>
+                          <td>54</td>
+                          <td>cowen@gmail.com</td>
+                          <td>London</td>
+                      </tr>
+                      <tr>
+                          <td class="highlight-cell">01203</td>
+                          <td class="highlight-cell">Matt Damon</td>
+                          <td class="highlight-cell">48</td>
+                          <td class="highlight-cell">mail@losangeles.com</td>
+                          <td class="highlight-cell">Los Angeles</td>
+                      </tr>
+                      <tr>
+                          <td class="highlight-cell">01204</td>
+                          <td class="highlight-cell">Liv Tyler</td>
+                          <td class="highlight-cell">41</td>
+                          <td class="highlight-cell">mail@losangeles.com</td>
+                          <td class="highlight-cell">Los Angeles</td>
+                      </tr>
+                  </table>
+
+              </div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <div id="section5" class="section">
+        <div class="text-wr">
+          <h1 class="title">References and Contributors</h1>
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                  <h2>List of References</h2>
+                  <ol>
+                      <li>Database Management Systems by Ulysses Alviar, et al, 1998</li>
+                      <li>DBMS Basic terminology and concepts. Retrieved from http://sunysudan.blogspot.com/2017/11/dbms-basic-terminology-and-concepts.html</li>
+                      <li>Everything You Need to Know about Databases and Database Management System. Retrieved from https://www.smartsheet.com/database-management</li>
+                      <li>MMS 144: Principles of Multimedia Information Management by Roberto B. Figueroa Jr.</li>
+                      <li>SQL Tutorial. Retrieved from https://www.w3schools.com/sql/default.asp</li>
+                  </ol>
+              </div>
+              <div class="swiper-slide">
+                  <h2>Contributors</h2>
+                  <ul>
+                      <li>Carlo Candoy</li>
+                      <li>Angelica Craig</li>                     
+                      <li>Ma. Ruffa Bettina Tagle</li>                     
+                      <li>Abigail Marie Jacinto</li>
+                      <li>JC Murillo</li>
+                      <li>Juan Paolo Suarez</li>
+                  </ul>
+              </div>
+            
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script>
+      window.slide = new SlideNav({
+        changeHash: true
+      });
+    </script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination"
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar"
+        }
+      });
+    </script>
+  </body>
+</html>
